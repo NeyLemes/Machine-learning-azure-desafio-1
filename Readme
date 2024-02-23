@@ -1,6 +1,87 @@
-## Desafio Machine learning 1
+## Desafio DIO 1
 
-# Criação de um arquivo
+# Modelo de previsão de dados
 
-Acesse o Azure MAchine learning
+* acessar https://azure.microsoft.com/pt-br/free/ 
+Fazer o login, Acesar dashboard Azure Machine Learning
+Criar novo workspace (para projetos e equipes ML)
+Assinatura: assinatura do Azure 1 
+Grupo de recursos: criar um grupo para guardar os projetos, no meu caso LABAI900
+Nome: laboratorio900 
+Região: East US 
+Manter as demais informações do formulario sem alterar dados 
+Clicar em: EXAMINAR + CRIAR
+Apos a validação clicar em CRIAR 
+Clicar em IR PARA O RECURSO
+Clicar no botão: INICIAR O ESTÚDIO
+Clicar em ML AUTOMATIZADO
+Clicar em NOVO TRABALHO DE ML ATUMATIZADO;
+
+Preencher o nome do trabalho: mslearn-bike-autom
+Novo nome do experimento : mslearn-bike-rental
+Descrição : Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
+Marcas : nenhuma
+Clicar em avançar
+Tipo de tarefa e dados: Selecionar tipo de tarefa: REGRESSÃO
+Clicar em +CRIAR
+Definir o nome e o tipo do ativo de dados: alugueldebicicletas
+Descrição: dados históricos de aluguel de bicicletas
+Tipo: Tabular
+AVANÇAR
+Escolher a fonte para o ativo de dados, selecione: De arquivos da Web
+AVANÇAR
+Insira uma URL da Web : No meu caso a URL da documentação : Microsoft: https://aka.ms/bike-rentals
+AVANÇAR
+Sera feita a validação do link
+AVANÇAR
+Página "Esquema"
+AVANÇAR
+Na página "Examinar"
+CRIAR
+Tipo de tarefa e dados :Aguardar aparecer a mensagem: Êxito: Ativo de dados alugueldebicicletas criado com sucesso.
+Clicar em ALUGUELDEBICICLETAS
+AVANÇAR
+Configuração de tarefas: Destino : RENTALS
+Clicar em: Exibir definições de configuração adicionais
+Desmarcar as opções que estiverem marcadas
+Modelos permitidos: clicarm em RANDON e LIGHT
+SALVAR
+Limites: Máximo de testes: 3
+Máximo de testes simultâneos: 3 
+Máximo de nós: 3
+Limite de pontuação da métrica: 0,085 
+Tempo limite: 15
+Tempo limite de iteração: 15 Selecionar
+Habilitar rescisão antecipada
+Tipo de validação: divisão de validação de treinamento
+Validação de percentual de dados: 10
+Dados de teste: Nenhum
+AVANÇAR
+Página COMPUTAÇÃO> não alterar os dados
+AVANÇAR
+Clicar no botão ENVIAR TRABALHO DETREINAMENTO
+Aguardar finalizar o processo, no meu caso demorou 9 minutos
+
+Validação
+
+Selecione no menu: Nome do algoritmo
+Clique em IMPLANTAR
+Selecione SERVIÇOS DE WEB
+Nome: prever-alugueis
+Descrição: Prever aluguel de bicicletas
+Tipo de computação: Instância de Contêiner do Azure
+Habilitar autenticação
+IMPLANTAR - Aparecerá a mensagem: "Êxito: A implantação de modelo foi disparada com êxito"
+
+Clicar em MODELOS
+Selecione DETALHES
+Clicar em CRIADO POR TRABALHO
+Clicar em MÉTRICAS 
+Voltar para MODELOS
+Seleciona o modelo
+Clica em PONTOS DE EXTREMIDADE
+TESTAR aparecerão os  códigos
+Clicar em TESTAR novamente
+Vai aparecer um outro código
+O código que apareceu é o resultado final do nosso projeto
 
